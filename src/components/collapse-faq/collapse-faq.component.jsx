@@ -2,19 +2,26 @@ import React, {useState, useRef} from "react";
 
 import "./collapse-faq.styles.scss";
 
-function CollapseFaq(){
+function CollapseFaq({question, answer}){
     const [isOpen, setIsOpen] = useState(false);
 
     const parentRef = useRef();
 
+  
+
     return(
         <div className="collapse-container">
           <div className="question-section">
-          v <button 
+           <button 
             className="toggle"
             onClick={() => setIsOpen(!isOpen)}
-            >btn</button>
-            <h2>some question text here?</h2>
+            >{
+                isOpen ? 
+                <i class="fas fa-arrow-circle-up fa-2x"></i>          
+                :
+                <i class="fas fa-arrow-circle-down fa-2x"></i>
+            }</button>
+            <h2>{question}</h2>
           </div>
           <div className="content-parent"
           ref={parentRef}
@@ -25,9 +32,7 @@ function CollapseFaq(){
           }}
           >
             <div className="content">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium</p>
+             <p>{answer}</p>
             </div>
           </div>
         </div>
@@ -35,3 +40,7 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium</p
 }
 
 export default CollapseFaq;
+
+
+{/* <i class="fas fa-arrow-circle-up"></i>
+<i class="fas fa-arrow-circle-down"></i> */}

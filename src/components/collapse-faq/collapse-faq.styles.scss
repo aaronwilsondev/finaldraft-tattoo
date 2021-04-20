@@ -1,0 +1,23 @@
+.collapse-container .toggle{
+    background: rgb(65, 111, 170);
+    border: unset;
+    cursor: pointer;
+    font: unset;
+    padding: 0.3rem;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.collapse-container .content {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.collapse-container .content-parent{
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.3s;
+}

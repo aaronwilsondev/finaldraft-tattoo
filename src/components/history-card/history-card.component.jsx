@@ -6,7 +6,8 @@ import "./history-card.styles.scss"
 
 const HistoryCard = ({imageUrl, title, date, text}) => (
     <div className="history-card">
-      <CircleImage className="img-left" imageUrl={imageUrl}/>
+      <CircleImage
+      className="img-left" imageUrl={imageUrl}/>
       <HistoryCardInfo
       title={title}
       date={date}

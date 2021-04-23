@@ -8,7 +8,7 @@ function GalleryPage() {
 
     const [ tag, setTag ] = useState("all");
     const [ filteredImages, setFilteredImages ] = useState([]);
-    console.log(GALLERY_DATA);
+    
 
     useEffect(
         () => {

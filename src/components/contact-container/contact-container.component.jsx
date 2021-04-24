@@ -1,9 +1,36 @@
-import React from "react";
-import SocialIcons from "../social-icons/social-icons.component";
+import React, {useState} from "react";
+// import SocialIcons from "../social-icons/social-icons.component";
 
 import "./contact-container.styless.scss";
 
-const ContactContainer = () => (
+import FormInput from "../form-input/form-input.component";
+
+function ContactContainer({handleSubmit, handleChange})  {
+  const [ form, setform ] = useState({
+    email: "",
+    name: "",
+    text: ""
+  })
+
+  handleSubmit = event => {
+    event.preventDefault();
+
+    setform({
+            email: "",
+            name: "",
+            text: ""
+          })
+  }
+
+  handleChange = event => {
+    const { value, name} = event.target;
+
+    setform({ [name]: value })
+  }
+
+ 
+  
+  return(
     <div className="contact-container">
       <div className="contact-bg">
         <div className="bg-contact-container">
@@ -27,9 +54,39 @@ const ContactContainer = () => (
         </div>
       </div>
       <div className="form-container">
-
+         <h3 className="form-title">Contact Us</h3>
+         <form onSubmit={handleSubmit}>
+           <FormInput
+             name="email"
+             type="email"
+             handleChange={handleChange}
+             value={form.email}
+             required
+             label="Email"
+           />
+           <FormInput
+             name="name"
+             handleChange={handleChange}
+             type="fname"
+             value={form.name}
+             required
+             label="Name"
+           />
+           <FormInput
+             name="text"
+             handleChange={handleChange}
+             type="text"
+             value={form.text}
+             required
+             label="Message"
+           />
+           <input 
+           type="submit"
+           calue="Submit Form"
+           />
+         </form>
       </div>
     </div>
-)
+)}
 
 export default ContactContainer;

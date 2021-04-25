@@ -6,6 +6,8 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 function GalleryPage() {
 
+    console.log("rendered")
+
     const [ tag, setTag ] = useState("all");
     const [ filteredImages, setFilteredImages ] = useState([]);
     

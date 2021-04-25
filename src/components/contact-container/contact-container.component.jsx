@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-// import SocialIcons from "../social-icons/social-icons.component";
+import SocialIcons from "../social-icons/social-icons.component";
 
 import "./contact-container.styless.scss";
 
@@ -81,10 +81,12 @@ function ContactContainer({handleSubmit, handleChange})  {
              label="Message"
            />
            <input 
+           className="form-btn"
            type="submit"
            calue="Submit Form"
            />
          </form>
+         <SocialIcons/>
       </div>
     </div>
 )}

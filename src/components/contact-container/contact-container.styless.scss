@@ -91,3 +91,21 @@
     font-family: "Montserrat";
     color: black;
 }
+
+.form-btn {
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    background: rgb(180,158,58);
+    background: linear-gradient(90deg, rgba(180,158,58,1) 0%, rgba(253,246,29,1) 50%, rgba(231,252,76,1) 100%);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 8px 22px rgba(94, 28, 68,0.15);
+    font-family: "Playfair Display";
+    border: 1px solid black;
+    position: relative;
+    right: 10px;
+    top: 40px;
+}

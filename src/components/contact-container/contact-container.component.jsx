@@ -5,28 +5,29 @@ import "./contact-container.styless.scss";
 
 import FormInput from "../form-input/form-input.component";
 
-function ContactContainer({handleSubmit, handleChange})  {
+function ContactContainer()  {
   const [ form, setform ] = useState({
     email: "",
     name: "",
     text: ""
   })
 
-  handleSubmit = event => {
+ const handleSubmit = event => {
     event.preventDefault();
+    console.log(form)
 
     setform({
             email: "",
             name: "",
             text: ""
-          })
-  }
+          });
+  };
 
-  handleChange = event => {
+ const handleChange = event => {
     const { value, name} = event.target;
 
-    setform({ [name]: value })
-  }
+    setform(prevInputData => ({ ...prevInputData, [name]: value }));
+  };
 
  
   
@@ -59,32 +60,36 @@ function ContactContainer({handleSubmit, handleChange})  {
            <FormInput
              name="email"
              type="email"
-             handleChange={handleChange}
              value={form.email}
+             handleChange={handleChange}
              required
              label="Email"
            />
            <FormInput
              name="name"
-             handleChange={handleChange}
              type="fname"
              value={form.name}
+             handleChange={handleChange}
              required
              label="Name"
            />
            <FormInput
              name="text"
-             handleChange={handleChange}
              type="text"
              value={form.text}
+             handleChange={handleChange}
              required
              label="Message"
            />
-           <input 
+           <button
            className="form-btn"
            type="submit"
-           calue="Submit Form"
-           />
+           >submit</button>
+           {/* <input 
+           className="form-btn"
+           type="submit"
+           value="Submit Form"
+           /> */}
          </form>
          <SocialIcons/>
       </div>

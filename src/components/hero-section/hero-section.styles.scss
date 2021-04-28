@@ -44,5 +44,16 @@ hr{
     margin-top: 15px;
 }
 
+@media(max-width: 650px){
+    .hero-title{
+        font-size: 50px;
+    }
+
+    .hero-sub-title{
+        background: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
 
 

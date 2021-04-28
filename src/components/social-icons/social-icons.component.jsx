@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 const SocialIcons = () => (
     <div className="social-icons-container">
-       <Link>
-       <i class="h fab fa-facebook fa-3x"></i>
-       </Link>
-       <Link>
-       <i class="h fab fa-twitter fa-3x"></i>
-       </Link>
-       <Link>
-       <i class="h fab fa-instagram fa-3x"></i>
-       </Link>
+       <a href="https://www.facebook.com">
+        <i class="h fab fa-facebook fa-3x"></i>
+       </a>
+       <a href="https://www.twitter.com">
+        <i class="h fab fa-twitter fa-3x"></i>
+       </a>
+       <a href="https://www.instagram.com">
+        <i class="h fab fa-instagram fa-3x"></i>
+       </a>
     </div>
 )
 

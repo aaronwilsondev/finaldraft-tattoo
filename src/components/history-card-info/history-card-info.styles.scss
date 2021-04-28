@@ -19,3 +19,22 @@
     font-size: 20px;
     font-family: "Montserrat";
 }
+
+@media (max-width: 650px){
+    .info-container{
+        width: 150px;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .date{
+        font-size: 17.5px;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+}

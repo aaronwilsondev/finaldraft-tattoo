@@ -7,3 +7,10 @@
     border: 5px solid #ffd369;
     box-shadow: 2px 2px 10px;
 }
+
+@media(max-width: 650px){
+    .circle-image{
+        width:150px;
+        height:150px;
+    }
+}

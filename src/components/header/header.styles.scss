@@ -66,3 +66,65 @@ background: linear-gradient(90deg, rgba(66,65,65,1) 0%, rgba(147,147,146,1) 100%
 
 }
 
+@media (max-width: 1000px){
+
+    .cta-btn{
+       font-size: 15px;
+       padding: 7.5px 17.5px;
+    }
+
+    .options{
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 100px;
+    }
+
+    // .logo-container{
+    //     height: 8px;
+    // }
+
+    .header {
+        height: 80px;
+    }
+
+}
+
+@media(max-width: 750px){
+    .options{ 
+        font-size: 17.5px;
+    }
+}
+
+@media (max-width: 650px){
+
+    .options{
+        font-size: 15px;
+        position: relative;
+        right: 20px;
+    }
+
+    .option{
+        padding: 0 5px;
+    }
+
+    .logo{
+        width: 60px;
+    }
+
+    .logo-container{
+        width: 80px;
+        height: 80px;
+        left: 0;
+    }
+
+    .cta-btn{
+        font-size: 10px;
+        padding: 5px 7.5px;
+        position: relative;
+        left: 5px;
+    }
+}
+

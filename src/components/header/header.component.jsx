@@ -22,7 +22,9 @@ const Header = () => (
          </Link>
        </div>
        <div className="cta-btn-container">
+       <Link to="/contact">
          <button className="cta-btn">BOOK NOW</button>
+         </Link>
        </div>
     </div>
 )

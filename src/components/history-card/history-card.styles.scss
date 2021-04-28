@@ -3,3 +3,9 @@
   justify-content: space-between;
 
 }
+
+@media (max-width: 650px){
+  .history-card{
+    justify-content: space-evenly;
+  }
+}

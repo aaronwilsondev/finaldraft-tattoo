@@ -144,9 +144,7 @@ color:#fff;
     }
 
 
-.footer-input {
-    width:100%;
-}
+
 
 .btn {
     width: 100%;
@@ -157,6 +155,10 @@ color:#fff;
 }
 
 .social-media-wrap {
+    flex-direction: column;
+}
+
+.footer-subscription{
     flex-direction: column;
 }
 
@@ -183,5 +185,16 @@ color:#fff;
       background-color:#ffd369 ;
       color: black;
       border: 1px solid black;
+    }
+  }
+
+  @media(max-width: 650px){
+    .footer-input{
+        padding: 8px 5px;
+        width: 80%;
+    }
+
+    .footer-link-items{
+        margin: 0;
     }
   }
